@@ -1,0 +1,40 @@
+* {
+  font-size: 10px;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  grid-template-rows: repeat(3, 10rem);
+  grid-gap: 0px;
+  text-align: center;
+  place-content: center;
+}
+
+app-square {
+  text-align: center;
+  border: 1px gray solid;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.button-holder {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+@media all and (max-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 10em);
+    grid-template-rows: repeat(3, 10em);
+    grid-gap: 0px;
+    text-align: center;
+    place-content: center;
+  }
+}
